@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Abril+Fatface&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-display: "Abril Fatface", cursive;
+  --font-hand: "Permanent Marker", cursive;
+  --font-pixel: "Press Start 2P", cursive;
+}
+
+@keyframes rainbow-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fade-in-slow {
+  0% { opacity: 0; }
+  100% { opacity: 0.6; }
+}
+
+.rainbow-bg {
+  background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+  background-size: 400% 400%;
+  animation: rainbow-move 30s ease infinite, fade-in-slow 10s ease-out forwards;
+}

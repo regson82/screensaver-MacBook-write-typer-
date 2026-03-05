@@ -1,0 +1,5 @@
+{
+  "name": "Typewriter Clock",
+  "description": "A screensaver-style clock that displays the time as text with a typewriter effect, cycling through different fonts.",
+  "requestFramePermissions": []
+}
