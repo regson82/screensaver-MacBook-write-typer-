@@ -69,9 +69,6 @@ export default function TypewriterClock() {
         </span>
       </div>
       
-      <div className="relative z-10 absolute bottom-8 text-white/20 font-mono text-sm">
-        {now.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })}
-      </div>
     </div>
   );
 }
